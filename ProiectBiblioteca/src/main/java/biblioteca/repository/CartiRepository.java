@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class CartiRepository {
+public class CartiRepository implements IRepository{
 	
 	private String file = "src/main/resources/cartiBD.txt";
 	private List<Carte> carti=new ArrayList<Carte>();

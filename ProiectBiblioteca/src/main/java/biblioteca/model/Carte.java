@@ -18,8 +18,7 @@ public class Carte {
 		cuvinteCheie = new ArrayList<String>();
 	}
 
-	public Carte(int id, String titlu, List<String> autori, String an, String editura, List<String> cuvinteCheie){
-	    this.id=id;
+	public Carte(String titlu, List<String> autori, String an, String editura, List<String> cuvinteCheie){
 	    this.titlu=titlu;
 	    this.autori=autori;
 	    anAparitie=an;

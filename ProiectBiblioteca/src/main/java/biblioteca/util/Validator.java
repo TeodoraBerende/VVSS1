@@ -2,30 +2,34 @@ package biblioteca.util;
 
 import biblioteca.model.Carte;
 
+import java.util.Arrays;
+
 public class Validator {
 	public static void validateCarte(Carte c)throws Exception{
-
-		if(c.getCuvinteCheie()==null){
-			throw new Exception("Lista cuvinte cheie vida!");
+		if(c.getTitlu().length()<3) {
+			throw new Exception("Titlu invalid! " + c.getTitlu());
 		}
-		if(c.getAutori()==null){
+		if(c.getAutori().isEmpty()){
 			throw new Exception("Lista autori vida!");
 		}
-		if(c.getTitlu().length()<3)
-			throw new Exception("Titlu invalid! "+c.getTitlu());
 		for(String s:c.getAutori()){
 			if(!isOKString(s))
 				throw new Exception("Autor invalid! "+s);
 		}
 		if(!isNumber(c.getAnAparitie()))
 			throw new Exception("Anul aparitiei invalid! "+c.getAnAparitie());
+		if(Integer.parseInt(c.getAnAparitie())<1800)
+			throw new Exception("Anul aparitiei invalid! Trebuie sa fie mai mare de 1800! "+c.getAnAparitie());
 		if(c.getEditura().length()<3){
-            throw new Exception("Editura invalida! "+c.getEditura());
-        }
-        for(String s:c.getCuvinteCheie()){
-            if(!isOKString(s))
-                throw new Exception("Cuvant cheie invalid! "+s);
-        }
+			throw new Exception("Editura invalida! "+c.getEditura());
+		}
+		if(c.getCuvinteCheie().isEmpty()){
+			throw new Exception("Lista cuvinte cheie vida!");
+		}
+		for(String s:c.getCuvinteCheie()){
+			if(!isOKString(s))
+				throw new Exception("Cuvant cheie invalid! "+s);
+		}
 	}
 	
 	public static boolean isNumber(String s){
