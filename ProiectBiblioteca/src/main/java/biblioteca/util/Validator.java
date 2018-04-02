@@ -23,6 +23,9 @@ public class Validator {
 		if(c.getEditura().length()<3){
 			throw new Exception("Editura invalida! "+c.getEditura());
 		}
+		if(!isOKString(c.getEditura())){
+			throw new Exception("Editura invalida! "+c.getEditura());
+		}
 		if(c.getCuvinteCheie().isEmpty()){
 			throw new Exception("Lista cuvinte cheie vida!");
 		}

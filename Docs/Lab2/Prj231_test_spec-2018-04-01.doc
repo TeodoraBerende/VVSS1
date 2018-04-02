@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>testspec Prj231 - btir1815_BBT</title>
+<link type="text/css" rel="stylesheet" href="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj231<br>Test Suite: Prj231 - btir1815_BBT</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 01/04/2018</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>
+	Project for group 231.</p></div>
+ <br/><h1 class='doclevel'>Test Suite : btir1815_BBT</h1>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj231-32: Valid ECP</th></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	ECP1 : titlu is String</p>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:804pt" width="1074">
+	<tbody>
+		<tr height="19" style="height:14.4pt">
+			<td class="xl63" height="19" style="height:14.4pt;width:46pt" width="61">
+				1</td>
+			<td class="xl64" style="border-left:none;width:68pt" width="91">
+				1,3,5,7,9,11</td>
+			<td class="xl64" style="border-left:none;width:90pt" width="121">
+				&quot;1984&quot;</td>
+			<td class="xl64" style="border-left:none;width:147pt" width="197">
+				George Orwell</td>
+			<td class="xl64" style="border-left:none;width:57pt" width="76">
+				&quot;1949&quot;</td>
+			<td class="xl64" style="border-left:none;width:74pt" width="98">
+				Penguin Books</td>
+			<td class="xl65" colspan="2" style="border-right:.5pt solid black;
+  border-left:none;width:102pt" width="136">
+				politic, totalitarism</td>
+			<td class="xl65" colspan="2" style="border-right:.5pt solid black;
+  border-left:none;width:220pt" width="294">
+				record added</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr></table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj231-35: Non Valid ECP</th></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	ECP3 : titlu not String</p>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:804pt" width="1074">
+	<tbody>
+		<tr height="19" style="height:14.4pt">
+			<td class="xl66" height="19" style="height:14.4pt;width:46pt" width="61">
+				3</td>
+			<td class="xl65" style="border-left:none;width:68pt" width="91">
+				2, 3, 5, 7, 9,11</td>
+			<td class="xl65" style="border-left:none;width:90pt" width="121">
+				&quot;&quot;</td>
+			<td class="xl65" style="border-left:none;width:147pt" width="197">
+				George Orwell</td>
+			<td class="xl65" style="border-left:none;width:57pt" width="76">
+				&quot;1949&quot;</td>
+			<td class="xl65" style="border-left:none;width:74pt" width="98">
+				Penguin Books</td>
+			<td class="xl67" colspan="2" style="border-right:.5pt solid black;
+  border-left:none;width:102pt" width="136">
+				politic, totalitarism</td>
+			<td class="xl67" colspan="2" style="border-right:.5pt solid black;
+  border-left:none;width:220pt" width="294">
+				Error message-Titlu invalid</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr></table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj231-36: Valid BVA</th></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	BVA21.editura=&quot;E&quot;, length=1</p>
+<table border="0" cellpadding="0" cellspacing="0" style="width:1299px;" width="1301">
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr height="19">
+			<td height="57" rowspan="2" style="height:58px;width:72px;">
+				No TCxx_BVA</td>
+			<td rowspan="2" style="width:68px;">
+				BVA condition</td>
+			<td rowspan="2" style="width:78px;">
+				Correlated TC</td>
+			<td rowspan="2" style="width:78px;">
+				Executable</td>
+			<td colspan="6" style="width:753px;">
+				input data</td>
+			<td colspan="2" style="width:251px;">
+				output data</td>
+		</tr>
+		<tr height="38">
+			<td height="38" style="height:38px;">
+				titlu</td>
+			<td>
+				autori</td>
+			<td style="width:88px;">
+				an aparitie</td>
+			<td style="width:162px;">
+				editura</td>
+			<td>
+				cuvinte cheie</td>
+			<td colspan="2">
+				expected result</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:920pt" width="1229">
+	<tbody>
+		<tr height="19" style="height:14.4pt">
+			<td class="xl68" height="19" style="height:14.4pt;width:54pt" width="72">
+				&nbsp;</td>
+			<td class="xl66" style="border-left:none;width:51pt" width="68">
+				21</td>
+			<td class="xl65" style="border-left:none;width:58pt" width="77">
+				1</td>
+			<td class="xl65" style="border-left:none;width:58pt" width="78">
+				&nbsp;</td>
+			<td class="xl67" style="border-left:none;width:55pt" width="74">
+				&quot;1984&quot;</td>
+			<td class="xl67" style="border-left:none;width:120pt" width="161">
+				George Orwell</td>
+			<td class="xl67" style="border-left:none;width:66pt" width="88">
+				&quot;1949&quot;</td>
+			<td class="xl67" style="border-left:none;width:121pt" width="161">
+				Penguin Books</td>
+			<td class="xl67" style="border-left:none;width:99pt" width="132">
+				politic, totalitarism</td>
+			<td class="xl69" colspan="2" style="border-right:.5pt solid black;
+  border-left:none;width:238pt" width="318">
+				record added</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr></table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj231-37: Non Valid BVA</th></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	editura is String</p>
+<table border="0" cellpadding="0" cellspacing="0" style="width:279px;" width="278">
+	<tbody>
+		<tr height="19">
+			<td height="19" style="height:19px;width:279px;">
+				24.editura=&quot;E..1234&quot;, length=256</td>
+		</tr>
+	</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" style="width:1227px;" width="1229">
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr height="19">
+			<td colspan="11" height="19" style="height:19px;width:1227px;">
+				BVA Condition-based TCs</td>
+		</tr>
+		<tr height="19">
+			<td height="38" rowspan="2" style="height:38px;width:72px;">
+				No TCxx_BVA</td>
+			<td rowspan="2" style="width:68px;">
+				BVA condition</td>
+			<td rowspan="2" style="width:78px;">
+				Correlated TC</td>
+			<td rowspan="2">
+				Executable</td>
+			<td colspan="6">
+				input data</td>
+			<td>
+				output data</td>
+		</tr>
+		<tr height="19">
+			<td height="19" style="height:19px;">
+				titlu</td>
+			<td>
+				autori</td>
+			<td style="width:88px;">
+				an aparitie</td>
+			<td style="width:162px;">
+				editura</td>
+			<td>
+				cuvinte cheie</td>
+			<td colspan="2">
+				expected result</td>
+		</tr>
+	</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:920pt" width="1229">
+	<tbody>
+		<tr height="19" style="height:14.4pt">
+			<td class="xl66" height="19" style="height:14.4pt;width:54pt" width="72">
+				24</td>
+			<td class="xl67" style="border-left:none;width:51pt" width="68">
+				24</td>
+			<td class="xl70" style="border-left:none;width:58pt" width="77">
+				&nbsp;</td>
+			<td class="xl70" style="border-left:none;width:58pt" width="78">
+				no</td>
+			<td class="xl65" style="border-left:none;width:55pt" width="74">
+				&quot;1984&quot;</td>
+			<td class="xl65" style="border-left:none;width:120pt" width="161">
+				George Orwell</td>
+			<td class="xl65" style="border-left:none;width:66pt" width="88">
+				&quot;1949&quot;</td>
+			<td class="xl65" style="border-left:none;width:121pt" width="161">
+				Penguin Books&hellip;1234</td>
+			<td class="xl65" style="border-left:none;width:99pt" width="132">
+				politic, totalitarism</td>
+			<td class="xl68" colspan="2" style="border-right:.5pt solid black;
+  border-left:none;width:238pt" width="318">
+				Error message-? Compiler checked</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr></table>
+</div>
+
+</body>
+</html>
