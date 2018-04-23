@@ -1,0 +1,161 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: CartiRepositoryMock</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">biblioteca.repository</a> ]
+</div>
+
+<h1>Coverage Summary for Class: CartiRepositoryMock (biblioteca.repository)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CartiRepositoryMock</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (3/ 6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    85%
+  </span>
+  <span class="absValue">
+    (34/ 40)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package biblioteca.repository;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import biblioteca.model.Carte;
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;import java.io.BufferedWriter;
+<i>6</i>&nbsp;import java.io.FileWriter;
+<i>7</i>&nbsp;import java.io.IOException;
+<i>8</i>&nbsp;import java.util.ArrayList;
+<i>9</i>&nbsp;import java.util.Arrays;
+<i>10</i>&nbsp;import java.util.List;
+<i>11</i>&nbsp;
+<i>12</i>&nbsp;public class CartiRepositoryMock implements IRepository {
+<i>13</i>&nbsp;
+<b class="fc"><i>14</i>&nbsp;    private List&lt;Carte&gt; carti=new ArrayList&lt;Carte&gt;();</b>
+<b class="fc"><i>15</i>&nbsp;    private int maxim=1;</b>
+<i>16</i>&nbsp;
+<b class="fc"><i>17</i>&nbsp;    public CartiRepositoryMock(){</b>
+<b class="fc"><i>18</i>&nbsp;        carti.add(new Carte(1,&quot;Povesti&quot;, Arrays.asList(&quot;Mihai Eminescu&quot;,&quot;Ion Caragiale&quot;,&quot;Ion Creanga&quot;),&quot;1973&quot;,&quot;Corint&quot;,Arrays.asList(&quot;povesti&quot;,&quot;povestiri&quot;)));</b>
+<b class="fc"><i>19</i>&nbsp;        carti.add(new Carte(2,&quot;Poezii&quot;, Arrays.asList(&quot;Sadoveanu&quot;),&quot;1973&quot;,&quot;Corint&quot;,Arrays.asList(&quot;poezii&quot;)));</b>
+<b class="fc"><i>20</i>&nbsp;        carti.add(new Carte(3,&quot;Enigma Otiliei&quot;, Arrays.asList(&quot;George Calinesc&quot;),&quot;1948&quot;,&quot;Litera&quot;,Arrays.asList(&quot;enigma&quot;,&quot;otilia&quot;)));</b>
+<b class="fc"><i>21</i>&nbsp;        carti.add(new Carte(4,&quot;Povesti&quot;, Arrays.asList(&quot;Mihai Eminescu&quot;,&quot;Ion Creanga&quot;,&quot;Tudor&quot;),&quot;1990&quot;,&quot;Corint&quot;,Arrays.asList(&quot;povesti&quot;,&quot;povestiri&quot;)));</b>
+<b class="fc"><i>22</i>&nbsp;        carti.add(new Carte(7,&quot;1984&quot;, Arrays.asList(&quot;George Orwell&quot;),&quot;2013&quot;,&quot;Corint&quot;,Arrays.asList(&quot;contemporan&quot;)));</b>
+<i>23</i>&nbsp;
+<b class="fc"><i>24</i>&nbsp;        for (Carte c:carti){</b>
+<b class="fc"><i>25</i>&nbsp;            if(c.getId()&gt;maxim){</b>
+<b class="fc"><i>26</i>&nbsp;                maxim=c.getId();</b>
+<i>27</i>&nbsp;            }
+<b class="fc"><i>28</i>&nbsp;        }</b>
+<b class="fc"><i>29</i>&nbsp;    }</b>
+<i>30</i>&nbsp;
+<i>31</i>&nbsp;    @Override
+<i>32</i>&nbsp;    public void adaugaCarte(Carte c) {
+<b class="nc"><i>33</i>&nbsp;        maxim++;</b>
+<b class="nc"><i>34</i>&nbsp;        c.setId(maxim);</b>
+<b class="nc"><i>35</i>&nbsp;        carti.add(c);</b>
+<b class="nc"><i>36</i>&nbsp;    }</b>
+<i>37</i>&nbsp;
+<i>38</i>&nbsp;    @Override
+<i>39</i>&nbsp;    public List&lt;Carte&gt; getAllCarti() {
+<b class="nc"><i>40</i>&nbsp;        return carti;</b>
+<i>41</i>&nbsp;    }
+<i>42</i>&nbsp;
+<i>43</i>&nbsp;    public int getMaxim(){
+<b class="nc"><i>44</i>&nbsp;        return maxim;</b>
+<i>45</i>&nbsp;    }
+<i>46</i>&nbsp;
+<i>47</i>&nbsp;    public List&lt;Carte&gt; cautaCarteDupaAutor(String autor) {
+<b class="fc"><i>48</i>&nbsp;        List&lt;Carte&gt; cartiGasite = new ArrayList&lt;Carte&gt;();</b>
+<b class="fc"><i>49</i>&nbsp;        int i=0;</b>
+<b class="fc"><i>50</i>&nbsp;        while (i&lt;carti.size()) {</b>
+<b class="fc"><i>51</i>&nbsp;            boolean flag = false;</b>
+<b class="fc"><i>52</i>&nbsp;            List&lt;String&gt; autori = carti.get(i).getAutori();</b>
+<b class="fc"><i>53</i>&nbsp;            int j = 0;</b>
+<b class="fc"><i>54</i>&nbsp;            while (j &lt; autori.size() &amp;&amp; !flag) {</b>
+<b class="fc"><i>55</i>&nbsp;                String[] nume = autori.get(j).split(&quot; &quot;);</b>
+<b class="fc"><i>56</i>&nbsp;                for (String numeAutor : nume) {</b>
+<b class="fc"><i>57</i>&nbsp;                    if (numeAutor.length() &gt;= autor.length()) {</b>
+<b class="fc"><i>58</i>&nbsp;                        if (numeAutor.toLowerCase().substring(0, autor.length()).equals(autor.toLowerCase())) {</b>
+<b class="fc"><i>59</i>&nbsp;                            flag = true;</b>
+<i>60</i>&nbsp;                        }
+<i>61</i>&nbsp;                    }
+<i>62</i>&nbsp;                }
+<b class="fc"><i>63</i>&nbsp;                j++;</b>
+<b class="fc"><i>64</i>&nbsp;            }</b>
+<b class="fc"><i>65</i>&nbsp;            if (flag == true) {</b>
+<b class="fc"><i>66</i>&nbsp;                cartiGasite.add(carti.get(i));</b>
+<i>67</i>&nbsp;            }
+<b class="fc"><i>68</i>&nbsp;            i++;</b>
+<b class="fc"><i>69</i>&nbsp;        }</b>
+<b class="fc"><i>70</i>&nbsp;        return cartiGasite;</b>
+<i>71</i>&nbsp;    }
+<i>72</i>&nbsp;
+<i>73</i>&nbsp;    public void removeAll(){
+<b class="fc"><i>74</i>&nbsp;        carti.clear();</b>
+<b class="fc"><i>75</i>&nbsp;    }</b>
+<i>76</i>&nbsp;
+<i>77</i>&nbsp;
+<i>78</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-04-23 10:48</div>
+</div>
+</body>
+</html>

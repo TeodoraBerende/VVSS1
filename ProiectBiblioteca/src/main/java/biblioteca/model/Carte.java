@@ -19,12 +19,21 @@ public class Carte {
 	}
 
 	public Carte(String titlu, List<String> autori, String an, String editura, List<String> cuvinteCheie){
-	    this.titlu=titlu;
-	    this.autori=autori;
-	    anAparitie=an;
-	    this.editura=editura;
-	    this.cuvinteCheie=cuvinteCheie;
-    }
+		this.titlu=titlu;
+		this.autori=autori;
+		anAparitie=an;
+		this.editura=editura;
+		this.cuvinteCheie=cuvinteCheie;
+	}
+
+	public Carte(int id,String titlu, List<String> autori, String an, String editura, List<String> cuvinteCheie){
+		this.id=id;
+		this.titlu=titlu;
+		this.autori=autori;
+		anAparitie=an;
+		this.editura=editura;
+		this.cuvinteCheie=cuvinteCheie;
+	}
 
     public int getId() {
         return id;
@@ -165,5 +174,12 @@ public class Carte {
         }
         return c;
     }
-	
+
+	@Override
+	public boolean equals(Object obj) {
+		if(id==((Carte)obj).id){
+			return true;
+		}
+		return false;
+	}
 }

@@ -110,13 +110,13 @@ public class CartiRepository implements IRepository{
             while (j < autori.size() && !flag) {
                 String[] nume = autori.get(j).split(" ");
                 for (String numeAutor : nume) {
-                    if (numeAutor.length() >= autor.length()){
+                    if (numeAutor.length() >= autor.length()) {
                         if (numeAutor.toLowerCase().substring(0, autor.length()).equals(autor.toLowerCase())) {
                             flag = true;
                         }
-                        j++;
                     }
                 }
+                j++;
             }
             if (flag == true) {
                 cartiGasite.add(carti.get(i));

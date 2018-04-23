@@ -7,4 +7,5 @@ import java.util.List;
 public interface IRepository {
     void adaugaCarte(Carte c);
     List<Carte> getAllCarti();
+    List<Carte> cautaCarteDupaAutor(String autor);
 }
