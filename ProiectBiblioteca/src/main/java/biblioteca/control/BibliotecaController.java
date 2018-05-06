@@ -3,15 +3,16 @@ package biblioteca.control;
 
 import biblioteca.model.Carte;
 import biblioteca.repository.CartiRepository;
+import biblioteca.repository.IRepository;
 import biblioteca.util.Validator;
 
 import java.util.List;
 
 public class BibliotecaController {
 
-	private CartiRepository repositoryCarti;
+	private IRepository repositoryCarti;
 	
-	public BibliotecaController(CartiRepository cr){
+	public BibliotecaController(IRepository cr){
 		this.repositoryCarti = cr;
 	}
 	
