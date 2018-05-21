@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"UBB directory parametrized","Login UBB","SUCCESS","2018-05-20T19:36:02.197+03:00[Europe/Athens]","0.0","24.64"
+"UBB login parametrized","Login UBB","SUCCESS","2018-05-20T19:36:41.145+03:00[Europe/Athens]","0.0","21.01"
+"UBB login testing","Valid directory test","SUCCESS","2018-05-20T19:37:35.987+03:00[Europe/Athens]","0.0","14.21"
+"UBB login testing","Invalid directory test","SUCCESS","2018-05-20T19:37:52.025+03:00[Europe/Athens]","0.0","9.08"
+"UBB login testing","Valid login test","SUCCESS","2018-05-20T19:38:02.465+03:00[Europe/Athens]","0.0","6.47"
+"UBB login testing","Invalid login test","SUCCESS","2018-05-20T19:38:09.925+03:00[Europe/Athens]","0.0","7.71"
